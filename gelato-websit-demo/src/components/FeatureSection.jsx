@@ -5,7 +5,7 @@ const FeatureSection = () => {
 
       <div className="bg-white text-black py-12 xl:px-12">
         <div className="  px-2 sm:px-6 lg:px-8 text-center lg:flex lg:flex-col lg:items-center lg:justify-center">
-          <h2 className=" text-2xl md:text-4xl font-extrabold mb-8">Why choose Gelato</h2>
+          <h2 className=" text-3xl md:text-4xl font-extrabold mb-8">Why choose Gelato</h2>
           <div className="grid md:grid-cols-2">
             {/* Left Section: Image */}
             <div className=" flex items-center justify-center">
@@ -75,7 +75,7 @@ const FeatureSection = () => {
           <h4 className="text-[1.25rem] text-gray-600 mb-2 font-semibold tracking-wider">For print on demand sellers</h4>
           <h1 className=" text-xl md:text-3xl lg:text-6xl lg:font-extrabold font-bold text-gray-900 mb-4 tracking-wide">Accelerate business growth with innovative design tools and apps</h1>
           <p className=" text-sm md:text-xl font-bold text-gray-700 mb-6 tracking-wider pr-20">See how our cutting-edge solutions can help you reach new customers and maximize your profits.</p>
-          <button className="bg-black pb-2 text-white px-4 hover:text-gray-300 font-semibold text-sm  py-1 rounded-3xl">Get Started</button>
+          <button className="bg-black pb-2 text-white px-4 hover:text-gray-300 font-semibold text-sm  py-2 rounded-3xl">Get Started</button>
         </div>
 
         {/* Right Section */}

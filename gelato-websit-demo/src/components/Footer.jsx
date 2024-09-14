@@ -27,11 +27,11 @@ const Footer = () => {
     <footer className="bg-black text-white ">
       <div className="max-w-screen-xl mx-auto px-9 py-12 grid grid-cols-1 md:grid-cols-4 gap-2">
         <div className="space-y-3">
-          <img src="https://a.storyblok.com/f/165154/x/b69011fb22/_logo.svg" alt="" />
+          <img src="https://a.storyblok.com/f/165154/x/b69011fb22/_logo.svg" alt="" className="w-32 mb-5" />
           <p className="text-sm">
             Gelato has created the world's largest network for local production and distribution of customized products. Together we bring creativity to life - and into business.
           </p>
-          <button className="border pb-2 bg-white text-black hover:bg-gray-200  px-4 font-bold text-sm  py-1 rounded-3xl">Get Started</button>
+          <button className="border pb-2 bg-white text-black hover:bg-gray-200  px-4 font-bold text-sm  py-2 rounded-3xl">Get Started</button>
           <p className="md:block hidden">Get the app</p>
           <div className="md:flex gap-2 mt-2 hidden">
             <img src="https://a.storyblok.com/f/165154/x/de4bf52166/badge-1.svg" alt="app-store-img" className="cursor-pointer" />
@@ -115,7 +115,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className=" lg:hidden space-y-4 md:ml-5 md:w-full">
+        <div className=" lg:hidden space-y-4 md:ml-5 mt-4 md:w-full">
           <div>
             <h2 onClick={() => handleOpen("openDemand")} className="font-extrabold text-xl flex items-center gap-1 hover:text-gray-400 cursor-pointer">
               {!openDemand ? <FaAngleRight /> : <FaChevronDown />}
@@ -182,7 +182,7 @@ const Footer = () => {
           <div>
             <h2 onClick={() => handleOpen("openCompany")} className="font-extrabold text-xl flex items-center gap-1 hover:text-gray-400 cursor-pointer">
               {!openCompany ? <FaAngleRight /> : <FaChevronDown />}
-              Print on demand
+              Company
             </h2>
             {openCompany ? (
               <div className="text-sm flex flex-col pl-5 gap-1 my-2">
@@ -220,8 +220,8 @@ const Footer = () => {
           </div>
           <div></div>
         </div>
-        <div className=" lg:hidden p-[8px] border-2 w-[200px] max-h-[40px] lg:w-[300] mt-5">
-          <select className="bg-black w-full outline-none" id="language" name="language">
+        <div className=" rounded-3xl lg:hidden p-[8px] border-2 w-[200px] max-h-[45px] lg:w-[300] mt-5">
+          <select className="bg-black w-full outline-none " id="language" name="language">
             <option className="bg-transparent flex justify-between" value="en">
               English (India)
             </option>

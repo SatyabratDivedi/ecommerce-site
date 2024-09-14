@@ -50,12 +50,10 @@ const Navbar = () => {
     }));
   };
 
-  
-
   return (
     <>
       <div className="bg-black text-white font-thin w-full text-center py-2 border-b-2 border-white">
-        <a className="flex text-[.7rem] lg:text-[1rem] sm:text-sm items-center justify-center underline">
+        <a className="flex text-[1rem] lg:text-[1.2rem] sm:text-sm items-center justify-center underline">
           FREE SHIPPING for orders over $300. Order today <MdErrorOutline />
         </a>
       </div>
@@ -67,7 +65,7 @@ const Navbar = () => {
                 <HiBars3 className="size-6" />
               </button>
             </div>
-            <img className=" w-20 sm:w-24 md:w-32" src="https://a.storyblok.com/f/165154/261x55/ecf04f407f/gelato_logo_black.svg" alt="gelato_logo" />
+            <img className=" w-24 sm:w-28 md:w-32" src="https://a.storyblok.com/f/165154/261x55/ecf04f407f/gelato_logo_black.svg" alt="gelato_logo" />
           </div>
           <div className=" flex gap-2">
             <ul className="lg:flex hidden lg:items-center absolute lg:relative bg-white w-full lg:w-auto top-16 lg:top-auto left-0 lg:left-auto lg:z-auto shadow-lg lg:shadow-none">
@@ -84,7 +82,7 @@ const Navbar = () => {
                 <IoPerson className="text-xl" /> Sign in
               </li>
             </ul>
-            <button className="bg-black pb-2 text-white px-4 hover:text-gray-300 font-semibold text-[.8rem]  py-1 rounded-3xl">Sign up for free</button>
+            <button className="bg-black pb-2 text-white px-4 hover:text-gray-300 font-semibold text-[.8rem]  py-2 rounded-3xl">Sign up for free</button>
           </div>
         </div>
         <div className="lg:flex px-28 hidden">
@@ -114,9 +112,9 @@ const Navbar = () => {
         {/* mobile navbar slider start */}
         <div>
           <div
-            className={`${menuOpen ? "block" : "hidden"} lg:hidden space-x-6 lg:items-center
-             absolute lg:relative  w-[100%]  lg:w-auto top-0 lg:top-auto 
-           left-0 lg:left-auto z-10 lg:z-auto shadow-lg lg:shadow-none transition duration-1000`}
+            className={`${
+              menuOpen ? "block" : "hidden"
+            } lg:hidden space-x-6 lg:items-center absolute lg:relative  w-[100%]  lg:w-auto top-0 lg:top-auto left-0 lg:left-auto z-10 lg:z-auto shadow-lg lg:shadow-none transition duration-1000`}
           >
             <div className=" z-50 flex transition duration-1000">
               <div className=" w-[100%] sm:w-[60%] bg-white h-screen max-w-[400px]">
@@ -134,10 +132,10 @@ const Navbar = () => {
                 </div>
                 <hr />
                 <div className="  flex justify-between py-5 px-3 ">
-                  <button className="bg-black pb-2 text-white px-2 hover:text-gray-300 font-semibold text-[.6rem] md:text-sm  py-1 rounded-3xl">Sigh up for free</button>
-                  <div className="w-px h-8 bg-gray-300 mr-4 "></div>
+                  <button className="bg-black pb-2 text-white px-4 hover:text-gray-300 font-semibold text-[.8rem] md:text-sm  py-2 rounded-3xl">Sign up for free</button>
+                  <div className="w-px h-8 bg-gray-300  "></div>
                   <div className="flex items-center gap-3 text-sm hover:bg-gray-300 px-2 cursor-pointer rounded-2xl">
-                    <IoPerson className="text-[1.1rem]" /> Sign in
+                    <IoPerson className="text-[1.3rem]" /> Sign in
                   </div>
                 </div>
                 <hr />
@@ -149,15 +147,11 @@ const Navbar = () => {
                         onClick={() => miniDeviceOpenHandlerToggle(data.secondName)}
                         className=" py-2 lg:py-0 lg:px-0 flex justify-between items-center cursor-pointer duration-200 text-sm hover:bg-gray-200 px-6 "
                       >
-                        {data.mainSection} <FaAngleRight className="text-sm" />
+                        {data.mainSection} {data.Children.length > 0 && <FaAngleRight className="text-sm" />}
                       </li>
                       {miniDeviceOpen[data.secondName] && (
                         <div className="absolute bg-white top-0 left-0 md:w-[50%] width h-full p-4">
-                          <button
-                            onClick={() => miniDeviceOpenHandlerToggle(data.secondName)}
-                            className="
-                          focus:outline-none hover:bg-gray-300 p-1 cursor-pointer rounded-full"
-                          >
+                          <button onClick={() => miniDeviceOpenHandlerToggle(data.secondName)} className="focus:outline-none hover:bg-gray-300 p-1 cursor-pointer rounded-full">
                             <FaArrowLeft onClick={() => setMenuOpen(true)} className="size-6" />
                           </button>
                           {data.Children.map((child) => (

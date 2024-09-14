@@ -6,17 +6,17 @@ const HeroSection = () => {
       <section className=" px-5 md:px-10 md:py-10 pb-5 xl:px-24 bg-[#faf6ef] md:bg-white">
         <div className=" mx-auto flex flex-col-reverse md:flex-row items-center max-w-[1500px]">
           <div>
-            <h1 className="  font-extrabold text-2xl md:text-4xl mt-5 xl:text-6xl">Print on demand for your ecommerce business</h1>
-            <p className=" text-[1rem] md:text-[1.5rem] font-semibold tracking-wider my-6">Sign up for free and only pay for what you sell.</p>
+            <h1 className="  font-extrabold text-3xl md:text-4xl mt-5 xl:text-6xl">Print on demand for your ecommerce business</h1>
+            <p className=" text-[1.4rem] md:text-[1.5rem] font-semibold tracking-wider my-6">Sign up for free and only pay for what you sell.</p>
             <p className="text-base">
               Turn your passion into profit with the world’s largest <span className="underline">print on demand</span> network.
             </p>
             <div className="space-x-4 my-6 flex ">
-              <button className="bg-black pb-2 text-white px-4 hover:text-gray-300 font-semibold text-[.6rem] md:text-sm  py-1 rounded-3xl">Get started for free</button>
-              <button className="border pb-2 border-black hover:bg-gray-200  px-4 font-semibold text-[.6rem] md:text-sm py-1 rounded-3xl">See our products</button>
+              <button className="bg-black pb-2 text-white px-4 hover:text-gray-300 font-semibold text-[.8rem] md:text-sm  py-2 rounded-3xl">Get started for free</button>
+              <button className="border pb-2 border-black hover:bg-gray-200  px-4 font-semibold text-[.8rem] md:text-sm py-2 rounded-3xl">See our products</button>
             </div>
             <div className="flex flex-col gap-2 ">
-              <img className="w-28" src="https://a.storyblok.com/f/165154/300x86/7d28c66657/shopify_monotone_black.svg" />
+              <img className="w-40" src="https://a.storyblok.com/f/165154/300x86/7d28c66657/shopify_monotone_black.svg" />
               <div className="flex">
                 <MdOutlineStar className="text-[#46b99e] text-xl" />
                 <MdOutlineStar className="text-[#46b99e] text-xl" />
@@ -27,7 +27,7 @@ const HeroSection = () => {
               <p>based on 887 reviews</p>
             </div>
           </div>
-          <div className=" w-full h-full mt-2">
+          <div className=" w-full h-full mt-4">
             <img src="https://a.storyblok.com/f/165154/1105x958/e9c9ddb8d6/01_hp_top-banner_white-version-1.png/m/" alt="Products" className="w-full h-auto hidden md:block" />
             <img src="https://a.storyblok.com/f/165154/1280x720/5ed0187b38/02_hp_top-banner_1280x720-white-version-1.jpg/m/" className="w-full h-auto md:hidden" />
           </div>
